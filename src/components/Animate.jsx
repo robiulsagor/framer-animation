@@ -15,7 +15,10 @@ export default function Animate() {
             transition={{ duration: 0.1 }}
           >
             <span>Menu</span>
-            <span className="border-8 border-transparent border-t-black"></span>
+            <motion.span
+              className="border-8 border-transparent border-t-black"
+              animate={{ rotate: isOpen ? 180 : 0, y: isOpen ? -4 : 3 }}
+            ></motion.span>
           </motion.button>
         </div>
       </section>
